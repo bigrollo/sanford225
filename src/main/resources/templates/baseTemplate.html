@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<#macro page title>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>${title?html}</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/jquery-ui/jquery-ui.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="/webjars/jquery-ui/jquery-ui.js"></script>
+
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <header>
+        <div class="row">
+            <div class="col-sm-12 header_bar">
+                <div class="site_logo">
+                    Logo will be here
+                </div>
+            </div>
+        </div>
+    </header>
+
+</div>
+
+<#nested/>
+
 </body>
+
 </html>
+
+</#macro>
